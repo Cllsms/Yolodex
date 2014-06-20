@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#b2b2b2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add New Business"
+        android:id="@+id/NewBusinessTitle"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/businessNameInput"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:hint="Business Name"
+        android:layout_below="@+id/NewBusinessTitle"
+        android:layout_marginTop="45dp"
+        android:layout_alignLeft="@+id/NewBusinessTitle"
+        android:layout_alignRight="@+id/NewBusinessTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="save" />
+</RelativeLayout>

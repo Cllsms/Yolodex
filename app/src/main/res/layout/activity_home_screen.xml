@@ -1,0 +1,64 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b2b2b2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:id="@+id/contactsButton"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:onClick="showContacts"
+        android:layout_alignTop="@+id/calendarButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:id="@+id/calendarButton"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:onClick="showCalendar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <Spinner
+        android:id="@+id/business_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contactsButton"
+        android:layout_alignLeft="@+id/contactsButton"
+        android:layout_alignRight="@+id/calendarButton"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/spinner_prompt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yolodex"
+
+        android:id="@+id/titleMainScreen"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textSize="60sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please Choose A Business"
+        android:id="@+id/spinnerTitle"
+        android:layout_above="@+id/business_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>
